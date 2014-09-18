@@ -1,0 +1,18 @@
+On RHEL v5.x and CENTOS v5.x:
+
+Prerequisites:
+
+The following packages must be installed for policy compilation:
+* selinux-policy-targeted
+* selinux-policy-devel
+
+To install the prerequisite packages, use RPM or YUM.
+Example: sudo yum install selinux-policy-devel
+
+Install Instructions:
+1. Unpack the archive (likely already completed if you are reading this)
+2. Change to the "nginx" directory in the archive contents
+3. Run "make"
+4. Install the resulting nginx.pp SELinux module 
+   (i.e. sudo /usr/sbin/semodule -i nginx.pp)
+
