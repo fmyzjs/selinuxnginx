@@ -1,0 +1,4 @@
+selinuxnginx
+============
+
+nginx selinux support
